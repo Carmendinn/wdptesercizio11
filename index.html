@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5581abaa8c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="logo"><i class="fa-brands fa-black-tie" style="color: #000000;"></i></div>
+        <div id="nav1">
+            <div class="first">Home</div>
+            <div class="first">Come funziona</div>
+            <div class="first">Contatti
+                <button class="dropToggle" onclick="toggleDrop()">▼</button>
+                <div class="dropMenu">
+                    <div class="option">email</div>
+                    <div class="option">phone</div>
+                    <div class="option">socials</div>
+                </div>
+            </div>
+        </div>
+        <div class="nav2">
+            <div class="second">Login</div>
+            <div class="sign">Sign up</div>
+        </div>
+
+    </div>
+    <h1>Ti aiutiamo a trovare un lavoro!</h1>
+    <img class="underline" src="underline.png" alt="underline">
+    <div class="form">
+        <div>
+            <img src="pc.png" alt="laptop">
+        </div>
+        <!--imposto il simil form utilizzando 2 input ed un div per il tasto cerca-->
+        <div class="content">
+            <input id="jobTitle" type="text" placeholder="Cerca per lavoro" required>
+            <input id="jobLocations" type="text" placeholder="Cerca per luogo" required>
+            <button id="searchJobs" onclick="searchJobs">Cerca</button>
+        </div>
+    </div>
+    <div id="results">
+        <ul id="searchResults"></ul>
+        <div id="noResultsMessage">Nessun risultato trovato.</div>
+    </div>
+    <footer>
+        <div class="sx">
+            <i id="logoFoo" class="fa-brands fa-black-tie" style="color: #000000;"></i>
+            <p>Job Finder</p>
+            <p class="payoff">Ti aiutiamo a trovare il lavoro giusto per te!</p>
+        </div>
+        <div class="centro">
+            <h4>Bisogno di aiuto?</h4>
+            <h4>Visita la nostra sezione</h4>
+            <h4>Dicono di noi</h4>
+            <h4>Faq</h4>
+            <h4>Trustpilot</h4>
+             </div>
+        <div class="dx">
+            <h4 id="news">Newsletter</h4>
+            <h4>Get in touch!</h4>
+            <input type="email" placeholder="la tua email.." required>
+            <button>Iscriviti</button>
+        </div>
+    </footer>
+    <div class="social">
+        <p class="icon"><i class="fa-brands fa-google-plus-g"></i></p>
+        <p class="icon"><i class="fa-brands fa-x-twitter"></i></p>
+        <p class="icon"><i class="fa-brands fa-instagram"></i></p>
+        <p class="icon"><i class="fa-brands fa-facebook"></i></p>
+    </div>
+    <h4 class="piva"><i class="fa-solid fa-location-pin"></i>Job Finder s.r.l Via Roma, 12 ROMA. PI 01234567890</h4>
+    <script src="script.js"></script>
+</body>
+
+</html>

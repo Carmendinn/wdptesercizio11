@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #d877fb, #bfe9ff);
+    font-family: "Quicksand", sans-serif;
+}
+
+.navbar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    font-size: 30px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+#nav1 {
+    margin-left: 20px;
+    display: flex;
+}
+
+.nav2 {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.first {
+    display: flex;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.second {
+    display: flex;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.sign {
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.sign:hover {
+    background-color: #d877fb;
+}
+
+.dropMenu {
+    display: none;
+    position: absolute;
+    background-color: #d877fb;
+    width: 100px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.option {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #dddddd;
+    border-radius: 20px;
+}
+
+.dropToggle {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    height: 400px;
+    width: 700px;
+    transition-duration: 0.3s;
+}
+
+.content {
+    margin-bottom: 200px;
+    flex-direction: column;
+    display: flex;
+    height: 100px;
+    width: 300px;
+    z-index: inherit;
+    margin-right: 300px;
+    margin-top: 150px;
+}
+
+h1 {
+    margin-top: 200px;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 700px;
+    margin-left: 650px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    font-size: 150px;
+    font-weight: 700;
+}
+
+img {
+    display: flex;
+    margin-right: 50px;
+    height: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form:hover img {
+    transform: scale(1.1);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 150px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #d877fb;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d877fb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ca02af;
+}
+
+#results {
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #d877fb;
+    border-radius: 25px;
+    height: 200px;
+    width: 800px;
+}
+
+#noResultsMessage {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+#logoFoo {
+    font-size: 150px;
+}
+
+.sx {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+}
+
+.payoff {
+    font-size: 15px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #be8ffb;
+    border-radius: 25px;
+    width: 500px;
+    height: 170px;
+}
+
+.centro h4 {
+    font-size: 15px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.dx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 50px;
+    background-color: #be8ffb;
+    border-radius: 25px;
+    width: 500px;
+    height: 170px;
+}
+
+.dx h4 {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#news {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.dx button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d877fb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dx input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 150px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: #d877fb;
+    outline: none;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.icon:hover {
+    color: #ca02af;
+    cursor: pointer;
+}
+.icon{
+    margin: 0 15px;
+}
+.piva{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
